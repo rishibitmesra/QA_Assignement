@@ -1,0 +1,15 @@
+
+a> Write an SQL query to find nth largest salary along with employee name.
+
+SELECT 
+    EmpName, Salary
+FROM
+    Employee
+INNER JOIN 
+    Salary ON Employee.EmpID = Salary.EmpID
+Order by Salary DESC LIMIT nth
+
+
+b> Write a query to update salary of employees to 5000 whose age is 30+
+
+update Salary set Salary=5000 where EmpID in (SELECT EmpID from Employee WHERE Date_of_birth < NOW() - INTERVAL 30 YEAR);

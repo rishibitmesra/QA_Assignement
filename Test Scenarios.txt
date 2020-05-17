@@ -1,0 +1,38 @@
+Test Scenarios:
+
+1. Promocode "NEW30" applicable for new User
+	. Verify when total amount is Rs. 1000
+	. Verify when total amount is greater than Rs. 1000 (Ex: 1001)
+	
+2. Discounted price in CheckOut Page
+	. Verify discounted price updated in CheckOut page
+	. Verify total price when already applied promocode is removed by user
+	
+3. Promocode "NEW30" is not appllicable for new User
+	. Verify when total amount is less than 1000 (Ex: 999,900)
+	. Verify when user applied invalid Promocode
+	. Verify when user didn't click on "Apply" button after entering valid promocode
+	. Verify when user directly click on "Proceed to pay" without applying promocode
+	. Verify when user cancelled after successfully applied promocode
+	. Verify when User removed items from cart and total amount became less than Rs. 1000 (Ex:999)
+
+4. Verify Promocode "NEW30" is not appllicable for existing User
+5. Verify Valid message if existing user try to apply promocode "NEW30"
+	
+6. Maximum Discount for new User
+	. Verify maximum discount is 300 only ,if total amount is 1000 
+	. Verify maximum discount is 300 only ,if total amount is greater than 1000 (Ex: 1001)
+
+7. Promocode for Guest User
+	. Verify if User gets valid message to navigate Login or Signup Page to apply code
+	
+8. Promocode text filed
+	. Verify if promocode text field is accepting more than 7 characters
+	. Verify if promocode text field is accepting less than 7 characters
+	. Verify promocode text box is blank or not by default
+	. Verify invalid promocode by entering combination of special character and Alphanumeric.
+	. Verify invalid promocode by entering blank spaces.
+		
+
+
+	
